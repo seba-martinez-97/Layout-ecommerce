@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header    header       header "
+    "aside     productos    productos"
+    "footer    footer   footer";
+    grid-template-columns: 15% auto;
+    grid-template-rows:6vh 100vh 6vh
+}
+
+
+
+.navbar{
+    background-color: black;
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.barra-lateral {
+    background-color: black;
+    grid-area: aside;
+    margin-right: 15px;
+    
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+    max-height: 100%;
+    margin-top: 30px;
+    color: white;
+}
+
+.categorias{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 5px;
+}
+
+
+.productos {
+    background-color: white;
+    grid-area: productos;
+    overflow-y: auto;
+}
+
+.objetos {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+      
+}
+
+.sku{
+    background-color: white;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sku img{
+    height: 250px;
+}
+
+.boton {
+    background-color:green;
+    width: 70px;
+    height: 30px;
+    color: aliceblue;
+}
+
+.h3-button{
+    margin-top: 16px;
+}
+
+
+
+.pie-pagina {
+    background-color: black;
+    grid-area: footer;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+
